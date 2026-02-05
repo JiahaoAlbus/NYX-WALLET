@@ -1,0 +1,24 @@
+{
+  "originHash" : "c841fe6a16f9c013a9f4a652dd6fb2c9dc8b74e59bdd2e6ee9991bf9e7cc4cfd",
+  "pins" : [
+    {
+      "identity" : "bigint",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/attaswift/BigInt.git",
+      "state" : {
+        "revision" : "e07e00fa1fd435143a2dcf8b7eec9a7710b2fdfe",
+        "version" : "5.7.0"
+      }
+    },
+    {
+      "identity" : "wallet-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/trustwallet/wallet-core",
+      "state" : {
+        "branch" : "master",
+        "revision" : "5cd11ac51a9b8421bc6b6f5207d7a1fb51cddbbe"
+      }
+    }
+  ],
+  "version" : 3
+}

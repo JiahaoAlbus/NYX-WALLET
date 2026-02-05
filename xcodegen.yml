@@ -1,0 +1,32 @@
+name: NYXWalletApp
+options:
+  bundleIdPrefix: com.nyx
+settings:
+  base:
+    PRODUCT_BUNDLE_IDENTIFIER: com.nyx.wallet
+    CURRENT_PROJECT_VERSION: 1
+    MARKETING_VERSION: 1.0.0
+    SWIFT_VERSION: 5.10
+packages:
+  NYXWallet:
+    path: .
+targets:
+  NYXWalletApp:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Sources/NYXWalletApp
+    resources:
+      - path: NYXWalletApp/Assets.xcassets
+    dependencies:
+      - package: NYXWallet
+        product: NYXUI
+    info:
+      path: NYXWalletApp/Info.plist
+    entitlements:
+      path: NYXWalletApp/NYXWalletApp.entitlements
+    settings:
+      base:
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_ENTITLEMENTS: NYXWalletApp/NYXWalletApp.entitlements

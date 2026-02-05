@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF3D6B2F10B043BD8AEED1FF /* NYXWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBE66528BD3458BA856795D /* NYXWalletApp.swift */; };
+		05159FD2266C4FC187FB9860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E7B6CB09DD4ED4A81513D6 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7CBE66528BD3458BA856795D /* NYXWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYXWalletApp.swift; sourceTree = "<group>"; };
+		83E7B6CB09DD4ED4A81513D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E70B0EBFF5E4239BC3BB977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9F6BCD528B2443692396197 /* NYXWalletApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NYXWalletApp.entitlements; sourceTree = "<group>"; };
+		441354A016A847C292FB08B3 /* NYXWalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = NYXWalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F536F28913904F3D89379452 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = ( ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2DFA9CFFD9444739896CE44 = {
+			isa = PBXGroup;
+			children = (
+				836BF9A876FE4E05A99E4052 /* NYXWalletApp */,
+				8E777BFD22F94503A9A54DDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		836BF9A876FE4E05A99E4052 /* NYXWalletApp */ = {
+			isa = PBXGroup;
+			children = (
+				C6718FF5FFA2419B8BF607DD /* Sources */,
+				B597E2D3B0874BBBB55210A6 /* Resources */,
+			);
+			name = NYXWalletApp;
+			sourceTree = "<group>";
+		};
+		C6718FF5FFA2419B8BF607DD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7CBE66528BD3458BA856795D /* NYXWalletApp.swift */,
+			);
+			name = Sources;
+			path = Sources/NYXWalletApp;
+			sourceTree = "<group>";
+		};
+		B597E2D3B0874BBBB55210A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83E7B6CB09DD4ED4A81513D6 /* Assets.xcassets */,
+				0E70B0EBFF5E4239BC3BB977 /* Info.plist */,
+				E9F6BCD528B2443692396197 /* NYXWalletApp.entitlements */,
+			);
+			name = Resources;
+			path = NYXWalletApp;
+			sourceTree = "<group>";
+		};
+		8E777BFD22F94503A9A54DDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				441354A016A847C292FB08B3 /* NYXWalletApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89115014767441E9B4F78FFC /* NYXWalletApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B6BE50F8B204141B884F1A6 /* Build configuration list for PBXNativeTarget "NYXWalletApp" */;
+			buildPhases = (
+				58609F0C849D4496ACB5770F /* Sources */,
+				F536F28913904F3D89379452 /* Frameworks */,
+				D2ACE36A954D4551AB18DD5F /* Resources */,
+			);
+			dependencies = (
+				D87F635FC37C4496932149C5 /* PBXTargetDependency */,
+			);
+			name = NYXWalletApp;
+			packageProductDependencies = (
+				91D67742D14C4DB896194417 /* NYXUI */,
+			);
+			productName = NYXWalletApp;
+			productReference = 441354A016A847C292FB08B3 /* NYXWalletApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD571F1053784785994C3A3B /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = DBDE0C89C1C74F8186BC6CFB /* Build configuration list for PBXProject "NYXWalletApp" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = A2DFA9CFFD9444739896CE44;
+			productRefGroup = 8E777BFD22F94503A9A54DDE;
+			projectDirPath = "";
+			projectRoot = "";
+			packageReferences = (
+				A6D0793F41D94335BF4CCEC4 /* NYXWallet */,
+			);
+			targets = (
+				89115014767441E9B4F78FFC /* NYXWalletApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2ACE36A954D4551AB18DD5F = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (
+			05159FD2266C4FC187FB9860 /* Assets.xcassets in Resources */,
+		); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58609F0C849D4496ACB5770F = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+			AF3D6B2F10B043BD8AEED1FF /* NYXWalletApp.swift in Sources */,
+		); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D87F635FC37C4496932149C5 = {isa = PBXTargetDependency; productRef = 91D67742D14C4DB896194417 /* NYXUI */; };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8580A2C752BA4C1399DC09C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.10;
+			};
+			name = Debug;
+		};
+		D29738D2534648A1821F8D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.10;
+			};
+			name = Release;
+		};
+		C71FF19622F2443288C8D5D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NYXWalletApp/NYXWalletApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				INFOPLIST_FILE = NYXWalletApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyx.wallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.10;
+				TARGETED_DEVICE_FAMILY = "1";
+			};
+			name = Debug;
+		};
+		493D085234734BA88D0C36CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NYXWalletApp/NYXWalletApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				INFOPLIST_FILE = NYXWalletApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyx.wallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.10;
+				TARGETED_DEVICE_FAMILY = "1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBDE0C89C1C74F8186BC6CFB /* Build configuration list for PBXProject "NYXWalletApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8580A2C752BA4C1399DC09C7 /* Debug */,
+				D29738D2534648A1821F8D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B6BE50F8B204141B884F1A6 /* Build configuration list for PBXNativeTarget "NYXWalletApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C71FF19622F2443288C8D5D3 /* Debug */,
+				493D085234734BA88D0C36CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A6D0793F41D94335BF4CCEC4 /* NYXWallet */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91D67742D14C4DB896194417 /* NYXUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6D0793F41D94335BF4CCEC4 /* NYXWallet */;
+			productName = NYXUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+	};
+	rootObject = CD571F1053784785994C3A3B /* Project object */;
+}
