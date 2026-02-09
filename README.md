@@ -98,3 +98,10 @@ TEAM_ID=YOUR_TEAM_ID ./scripts/archive.sh
 - Production API keys for 0x, Jupiter, Magic Eden, OpenSea
 - Final App Icons and marketing assets
 - App Store signing and provisioning profiles (requires your Apple Team setup)
+
+## Release Docs
+- App Store metadata draft: `APP_STORE_METADATA.md`
+- Privacy policy draft: `PRIVACY_POLICY.md`
+- Terms of service draft: `TERMS_OF_SERVICE.md`
+- Production key template: `PROD_KEYS_TEMPLATE.md`
+- PayEVM integration placeholder: `PAYEVM_INTEGRATION.md`
