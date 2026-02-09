@@ -91,6 +91,16 @@ xcodebuild -project NYXWalletApp.xcodeproj -scheme NYXWalletApp_iOS -destination
 TEAM_ID=YOUR_TEAM_ID ./scripts/archive.sh
 ```
 
+- One-step sign + export IPA:
+```
+TEAM_ID=YOUR_TEAM_ID ./scripts/sign_and_export.sh
+```
+
+- Capture simulator screenshots (requires Simulator to boot correctly):
+```
+./scripts/capture_screenshots.sh "iPhone 16"
+```
+
 ## Not Yet Complete / Needs Real Credentials
 - PayEVM (API endpoints + webhook signature verification + test/prod keys)
 - Paid RPC providers for mainnet (currently public/placeholder endpoints)

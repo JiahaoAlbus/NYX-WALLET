@@ -44,6 +44,9 @@ public final class Localizer: ObservableObject {
         "settings.environment": "Environment",
         "settings.mainnet": "Mainnet",
         "settings.testnet": "Testnet",
+        "settings.release_channel": "Release Channel",
+        "settings.production": "Production",
+        "settings.staging": "Staging",
         "settings.system": "System",
         "settings.english": "English",
         "settings.chinese": "Chinese"
@@ -72,6 +75,9 @@ public final class Localizer: ObservableObject {
         "settings.environment": "环境",
         "settings.mainnet": "主网",
         "settings.testnet": "测试网",
+        "settings.release_channel": "发布通道",
+        "settings.production": "生产",
+        "settings.staging": "预发",
         "settings.system": "系统",
         "settings.english": "英文",
         "settings.chinese": "中文"

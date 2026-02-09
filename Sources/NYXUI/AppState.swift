@@ -17,6 +17,7 @@ public final class AppState: ObservableObject {
     public let serviceConfig: ServiceConfig
     public let settingsStore: SettingsStore
     @Published public var localizer: Localizer
+    @Published public var releaseChannel: ReleaseChannel
     public let keyManager: KeyManager
     @Published public var addresses: WalletAddresses?
     public let transactionService: TransactionService
@@ -24,10 +25,11 @@ public final class AppState: ObservableObject {
     public init() {
         self.settingsStore = SettingsStore()
         let env = settingsStore.loadEnvironment()
+        self.releaseChannel = settingsStore.loadReleaseChannel()
         let networkEnv: NetworkEnvironment = env == .testnet ? .testnet : .mainnet
-        self.config = AppConfig.defaultThirdParty(environment: networkEnv)
+        self.config = AppConfig.forChannel(environment: networkEnv, channel: releaseChannel)
         self.nodeManager = NodeManager(environment: config.environment, store: DefaultNodeStore(), options: Dictionary(grouping: config.nodeOptions, by: { $0.chainId }))
-        self.serviceConfig = ServiceConfig.defaultKeys()
+        self.serviceConfig = ServiceConfig.forChannel(releaseChannel)
         self.localizer = Localizer(language: settingsStore.loadLanguage())
         self.keyManager = KeyManager()
         let feePolicy = FeePolicy(serviceFeeRate: 0.015, showServiceFee: true)
@@ -57,6 +59,11 @@ public final class AppState: ObservableObject {
     public func updateLanguage(_ lang: AppLanguage) {
         settingsStore.saveLanguage(lang)
         localizer.language = lang
+    }
+
+    public func updateReleaseChannel(_ channel: ReleaseChannel) {
+        settingsStore.saveReleaseChannel(channel)
+        releaseChannel = channel
     }
 
     public func unlockWallet() async {

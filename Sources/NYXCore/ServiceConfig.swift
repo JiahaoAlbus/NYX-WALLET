@@ -21,4 +21,18 @@ public struct ServiceConfig {
             openSeaApiKey: APIKeys.openSea
         )
     }
+
+    public static func forChannel(_ channel: ReleaseChannel) -> ServiceConfig {
+        switch channel {
+        case .production:
+            return defaultKeys()
+        case .staging:
+            return ServiceConfig(
+                zeroXApiKey: APIKeys.zeroXStaging,
+                jupiterApiKey: APIKeys.jupiterStaging,
+                magicEdenApiKey: APIKeys.magicEdenStaging,
+                openSeaApiKey: APIKeys.openSeaStaging
+            )
+        }
+    }
 }

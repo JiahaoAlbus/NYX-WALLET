@@ -11,4 +11,11 @@ public struct APIKeys {
 
     // Public/temporary OpenSea key. Replace before production.
     public static let openSea = "PUBLIC"
+
+    // Staging placeholders (use when ReleaseChannel.staging is selected).
+    public static let zeroXStaging = "PUBLIC"
+    public static let jupiterStaging = "PUBLIC"
+    public static let magicEdenStaging = "PUBLIC"
+    public static let openSeaStaging = "PUBLIC"
+    public static let tronGridStaging = "PUBLIC"
 }

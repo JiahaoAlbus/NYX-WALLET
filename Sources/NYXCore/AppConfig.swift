@@ -68,4 +68,30 @@ public struct AppConfig: Codable, Equatable {
             ])
         }
     }
+
+    public static func forChannel(environment: NetworkEnvironment, channel: ReleaseChannel) -> AppConfig {
+        switch channel {
+        case .production:
+            return defaultThirdParty(environment: environment)
+        case .staging:
+            let config = defaultThirdParty(environment: environment)
+            let updatedConfigs = config.rpcConfigs.map { config in
+                if config.chainId == "tron:mainnet" || config.chainId == "tron:shasta" {
+                    return RPCConfig(chainId: config.chainId, rpcURL: config.rpcURL, headers: [
+                        "TRON-PRO-API-KEY": APIKeys.tronGridStaging
+                    ])
+                }
+                return config
+            }
+            let updatedOptions = config.nodeOptions.map { option in
+                if option.chainId == "tron:mainnet" || option.chainId == "tron:shasta" {
+                    return NodeOption(chainId: option.chainId, name: option.name, url: option.url, headers: [
+                        "TRON-PRO-API-KEY": APIKeys.tronGridStaging
+                    ])
+                }
+                return option
+            }
+            return AppConfig(environment: config.environment, rpcConfigs: updatedConfigs, nodeOptions: updatedOptions)
+        }
+    }
 }

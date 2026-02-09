@@ -31,8 +31,9 @@
 ## App Store
 - TODO: Privacy policy + terms of service
 - TODO: App Store metadata + screenshots
- - TODO: App icons and marketing assets
- - TODO: App review notes + demo account (if required)
+- TODO: App icons and marketing assets
+- TODO: App review notes + demo account (if required)
+ - TODO: Release channel set to Production
 
 ## Security & QA
  - TODO: External security review + penetration testing
