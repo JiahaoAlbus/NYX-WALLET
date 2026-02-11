@@ -115,3 +115,9 @@ TEAM_ID=YOUR_TEAM_ID ./scripts/sign_and_export.sh
 - Terms of service draft: `TERMS_OF_SERVICE.md`
 - Production key template: `PROD_KEYS_TEMPLATE.md`
 - PayEVM integration placeholder: `PAYEVM_INTEGRATION.md`
+
+## ESP Application Docs
+- Summary: `esp/ESP_APPLICATION_SUMMARY.md`
+- Milestones: `esp/ESP_MILESTONES.md`
+- Budget: `esp/ESP_BUDGET.md`
+- Open source plan: `esp/ESP_OPEN_SOURCE_PLAN.md`
