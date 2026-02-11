@@ -1,23 +1,29 @@
-# 开源计划
+# Open‑Source Plan (Industry Standard)
 
-## 开源范围
-- 交易构建模块（EVM 交易构建 + EIP-1559）
-- 风险引擎与钓鱼检测框架
-- Seed Sharding（Shamir）实现与恢复流程
-- 交易模拟接口与风险提示策略
+## Scope
+Open‑source the Ethereum‑focused modules:
+- EIP‑1559 transaction builder + ERC‑20 transfer helpers
+- Transaction simulation interface + risk prompts
+- Seed sharding (Shamir) + recovery flow
+- Phishing/risk detection framework
 
-## 代码结构
-- `Sources/NYXChains`：交易构建与签名
-- `Sources/NYXRisk`：风险引擎
-- `Sources/NYXSecurity`：密钥管理、分片
+## Repository Structure
+- `Sources/NYXChains` — EVM transaction building
+- `Sources/NYXRisk` — risk engine and prompts
+- `Sources/NYXSecurity` — key management + sharding
 
-## 许可证
-MIT 或 Apache-2.0（待确认）
+## License
+Apache‑2.0 (preferred) or MIT (final choice before release)
 
-## 计划输出
-- README 使用文档与集成示例
-- 风险策略说明与可配置接口
-- 交易构建与费用展示规范说明
+## Documentation Deliverables
+- Usage guide with code examples
+- Integration notes for other wallets
+- Threat model summary for security module
 
-## 贡献方式
-公开 GitHub 仓库，接受 PR 与安全报告
+## Security Policy
+- Public SECURITY.md and disclosure email
+- Coordinated disclosure process and timeline
+
+## Release Plan
+- Tag stable releases aligned with milestones
+- Provide changelog and upgrade notes

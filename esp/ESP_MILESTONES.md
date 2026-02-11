@@ -1,26 +1,50 @@
-# ESP 里程碑与交付（6 个月）
+# ESP Milestones & Deliverables (Industry Standard)
 
-## M1（第 1-2 个月）：以太坊主网完善与交易安全
-- EIP-1559 交易支持（ETH/ERC20）
-- Gas 估算 + 费用透明展示
-- 交易模拟 + 风险提示（钓鱼检测、异常地址）
-- 交付物：
-  - EIP-1559 交易构建与签名模块
-  - 风险提示与模拟接口文档
+## M1 — Ethereum Transaction Safety (Month 1–2)
+**Objectives**
+- Implement EIP‑1559 transaction construction for ETH and ERC‑20.
+- Gas estimation + fee transparency in confirmation UI.
+- Pre‑signing simulation and risk prompts.
 
-## M2（第 3-4 个月）：安全与可靠性强化
-- 私钥分片（Shamir）恢复流程完善
-- Secure Enclave + Keychain 全链路审计
-- 交易失败/异常路径处理（回滚/提示）
-- 交付物：
-  - 安全模块开源包（Seed Sharding + 风险引擎）
-  - 风险/失败用例测试报告
+**Deliverables**
+- EIP‑1559 builder module (documented).
+- Risk prompt UX flow + sample scenarios.
+- Public documentation for simulation interface.
 
-## M3（第 5-6 个月）：发布就绪与生态贡献
-- iOS App Store 上线准备（图标/截图/审核资料）
-- 第三方安全评估或审计（摘要公开）
-- 提交开源文档与集成指南
-- 交付物：
-  - 可发布的 iOS App 构建流程
-  - 审计摘要 + 安全声明
-  - 开源仓库与使用文档
+**Acceptance Criteria**
+- ETH + ERC‑20 transfer successfully simulated and signed in testnet.
+- Fee breakdown visible before signing.
+
+---
+
+## M2 — Security Hardening (Month 3–4)
+**Objectives**
+- Seed sharding recovery flow (Shamir) completed.
+- Secure Enclave/Keychain hardening checklist finalized.
+- Edge‑case handling (low balance, invalid nonce, RPC errors).
+
+**Deliverables**
+- Open‑sourced security module (seed sharding + vault).
+- Security test plan & results summary.
+- Recovery UX flow documentation.
+
+**Acceptance Criteria**
+- Recovery flow validated with test vectors.
+- No regression in signing path under fault injection.
+
+---
+
+## M3 — Release Readiness (Month 5–6)
+**Objectives**
+- App Store‑ready build pipeline and metadata.
+- External security assessment or review summary.
+- Public open‑source release with usage docs.
+
+**Deliverables**
+- Release checklist completed.
+- Audit summary (or third‑party review notes).
+- OSS documentation + examples.
+
+**Acceptance Criteria**
+- Reproducible App Store build output.
+- Public repo includes integration docs and license.

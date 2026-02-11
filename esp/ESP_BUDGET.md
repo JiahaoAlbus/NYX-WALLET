@@ -1,34 +1,22 @@
-# ESP 预算拆解（USD，6 个月）
+# ESP Budget (Industry Standard, USD)
 
-> 说明：以精简团队为假设（2-3 人），优先投入安全与以太坊主网能力。
+## Summary
+Total request: **$162,000** (6 months)
 
-## 人力成本
-- iOS 工程（1 人，6 个月）：$48,000
-- 后端/链上集成（1 人，6 个月）：$48,000
-- 安全/审计协调（0.5 人，6 个月）：$18,000
-**小计：$114,000**
+## Cost Breakdown
+| Category | Amount | Rationale |
+|---|---:|---|
+| Engineering (iOS + blockchain integration) | $96,000 | 2 engineers, 6 months, focused on EIP‑1559, simulation, security hardening |
+| Security review / audit | $28,000 | External review of key management + transaction safety |
+| Infrastructure (RPC, monitoring) | $9,000 | Paid RPCs, uptime monitoring, crash analytics |
+| Legal / compliance | $6,000 | Privacy, terms, App Store compliance |
+| Design / store assets | $5,000 | Icon, screenshots, preview video |
+| Contingency | $18,000 | 10–12% buffer for delays, additional testing |
 
-## 安全与审计
-- 外部安全审计（定向模块）：$20,000
-- 渗透测试/代码审查：$8,000
-**小计：$28,000**
+## Budget Notes
+- Allocation prioritizes Ethereum safety features and public open‑source components.
+- Audit costs are scoped to the security modules and transaction safety paths.
+- Infrastructure is limited to essential paid RPC providers and logging.
 
-## 基础设施与服务
-- 付费 RPC 节点（ETH/BNB/SOL/TRON/BTC）：$6,000
-- 监控/日志/崩溃收集：$3,000
-**小计：$9,000**
-
-## 法务与合规
-- 隐私政策/条款审阅与咨询：$4,000
-- App Store 合规审核准备：$2,000
-**小计：$6,000**
-
-## 设计与物料
-- App 图标 / 截图 / 预览视频：$5,000
-**小计：$5,000**
-
-## 总计
-**$162,000**
-
-## 资金用途说明
-资金重点投入在以太坊主网交易能力、安全审计与可发布交付上，确保 ESP 资助直接转化为生态可用成果（开源模块 + 可发布应用）。
+## Funding Use Policy
+Grant funds will be used strictly for the items above, with monthly internal reporting.
